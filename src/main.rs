@@ -1,4 +1,4 @@
-use rus_di::{ Request, Server, StatusCode, Response};
+use rusdi::{ Request, Server, StatusCode, Response};
 
 fn main() {
     // Open Server in address : Localhost, port : 8080 
