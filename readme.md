@@ -1,9 +1,15 @@
 # Rusdi is Rust HTTP Framework for building fast, and simple Restful API.
 
+# How To Use?
+#### Open your Cargo.toml and add this to your dependencies
+```
+[dependencies]
+rusdi = { git = "https://github.com/fqKm/rusdi", branch = "main" }
+```
 # How To Create HTTP RestFul API Server?
- Here is example how to build simple api, to return the request body string
+#### Here is example how to build simple api, to return the request body string
  ```rust
- use rus_di::{ Request, Server, StatusCode, Response};
+ use rusdi::{ Request, Server, StatusCode, Response};
 
 fn main() {
     // Open Server in address : Localhost, port : 8080 
@@ -31,7 +37,7 @@ fn login(request:Option<Request>) -> Response {
 ```
 
 # Upcoming Work & Features : 
-### 1. Separate Each Route Method
+#### 1. Separate Each Route Method
 separate each methode to register the route. So it will be like this :
 ```rust
 server.post(path, handler_function); // for post methode
@@ -39,4 +45,4 @@ server.get(path, handler_function); // for get methode
 server.patch(path, handler_function); // for patch methode
 ```
 
-### 2. Add Global Middleware & Each Route Middleware
+#### 2. Add Global Middleware & Each Route Middleware
